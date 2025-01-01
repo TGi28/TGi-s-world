@@ -1,0 +1,52 @@
+body {
+  color: #f7ebd9 !important;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  border-radius: 20px;
+  padding: 20px;
+}
+
+iframe {
+  background: linear-gradient(to right, #f9e022, #f97474) !important;
+  padding: 2px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  /* border: 2px solid #6fff00 !important; */
+}
+
+h1 {
+  background-image: url(lava-background.jpg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  border-radius: 20px;
+  font-size: 110px !important;
+  color: transparent !important;
+  font-weight: bold;
+  margin: 20px 0 20px 0 !important;
+}
+
+h2 {
+  font-size: 40px !important;
+  font-weight: bold;
+  margin: 0 0 20px 0 !important;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+a {
+  color: #6fff00 !important;
+  text-decoration: none !important;
+}
