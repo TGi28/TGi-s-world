@@ -8,6 +8,15 @@ body {
   padding: 20px;
 }
 
+.clock {
+  border-top: 2px solid #f9e022;
+  font-size: 80px;
+  background-image: url(/images/lava-background.jpg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 iframe {
   background: linear-gradient(to right, #f9e022, #f97474) !important;
   padding: 2px;
@@ -20,7 +29,7 @@ iframe {
 }
 
 h1 {
-  background-image: url(lava-background.jpg);
+  background-image: url(/images/lava-background.jpg);
   -webkit-background-clip: text;
   background-clip: text;
   border-radius: 20px;
@@ -41,12 +50,117 @@ h2 {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bayern-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.carousel {
+  padding: 0 !important;
+  margin-bottom: 40px;
+
+  img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.glide {
+  position: relative;
+  border-radius: 20px;
+  overflow-x: hidden;
+}
+
+.track {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: transform 500ms;
+}
+
+.glide-btn {
+  background-color: #141414;
+  border-radius: 20px;
+  line-height: 2;
+  padding: 10px 5px;
+  position: absolute;
+  top: 50%;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
 .links {
+  h2 {
+    margin: 0 0 40px;
+    font-size: 60px !important;
+  }
+}
+
+.link-group {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 100px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 a {
   color: #6fff00 !important;
   text-decoration: none !important;
+  font-size: 30px;
+}
+
+.catch {
+  button {
+    font-size: 40px;
+    background-color: #ecf8ec !important;
+    border: 1px solid #f98a22;
+  }
+
+  h2 {
+    font-size: 60px !important;
+    margin: 0 0 20px;
+  }
+
+  p {
+    margin: 0 0 20px;
+  }
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.start {
+  color: green !important;
+}
+
+.stop {
+  color: red !important;
+}
+
+.timewatch {
+  font-size: 100px;
+  margin-bottom: 40px;
 }
